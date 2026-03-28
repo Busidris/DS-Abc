@@ -1,0 +1,42 @@
+…or create a new repository on the command line
+echo "# DS-Abc" >> README.md
+git init //initialize
+git add . //add files and start Tracking
+git commit -m "Added 28 feb Notebook" //checkpoint
+
+==============//You might need to login to conitnu====================
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+============================================================
+git branch -M main // go to branch main, you will be asked to auth
+git status // to check your status
+git remote add origin https://github.com/Busidris/DS-Abc.git //create connection from local to online git
+git push -u origin main // push your code
+
+// you can modifies, save the files and check the status again
+git status
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)git add . //add all files
+  (use "git restore <file>..." to discard changes in working directory)
+
+then you can commit
+git commit -m "Adding new lines" //checkpoint
+
+
+if you added a file online and you want it to reflect in offline folder 
+git pull origin Main/branch_name
+
+if another user want to have assess to your files
+git clone url-repo
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/Busidris/DS-Abc.git 
+git branch -M main
+git push -u origin main
